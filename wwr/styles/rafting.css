@@ -1,0 +1,47 @@
+
+:root{
+    --primary-color:	#E9E9EC;
+    --secondary-color:  #4F89BA;
+    --accent1-color: 	#EA3A41;
+    --accent2-color: 	#B8D9EC;
+
+}
+
+body {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    color: var(--secondary-color);
+    max-width: 800px;
+}
+
+title {
+    text-decoration-color: var(--secondary-color);
+    
+}
+
+h1, h2 {
+    color: var(--second-color);
+
+}
+
+div.hero {
+    position: relative;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+}
+article {
+    position: absolute;
+}
+
+footer a {
+    text-decoration: none;
+}

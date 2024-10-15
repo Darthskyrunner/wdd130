@@ -23,7 +23,7 @@ h1 {
 main image {
     width: 150px;
     height: auto;
-    border: var(--base-color)
+    border: var(--base-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
