@@ -10,38 +10,48 @@
 body {
     font-family: "Protest Strike", sans-serif;
     font-weight: 200;
-    color: var(--secondary-color);
-    max-width: 800px;
+    color: black;
+    max-width: 1024px;
 }
 
-title {
-    text-decoration-color: var(--secondary-color);
+.hero{
+    position: relative;
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--primary-color);
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--accent2-color);
+    padding: 10px;
+    color: var(--secondary-color);
+    z-index: 2;
+}
+
+.hero article img {
+    float: right;       
+    margin-left: 20px;  
+    width: 150px;       
+    height: auto;       
+}
+
+.hero article p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+nav a {
+    text-decoration: none;
     
 }
 
-h1, h2 {
-    color: var(--second-color);
-
-}
-
-div.hero {
-    position: relative;
-}
-
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-}
-article {
-    position: absolute;
-}
-
-footer a {
-    text-decoration: none;
-}
