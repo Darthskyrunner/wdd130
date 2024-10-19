@@ -1,22 +1,56 @@
 
-:root{
-    --primary-color:	#E9E9EC;
-    --secondary-color:  #4F89BA;
-    --accent1-color: 	#EA3A41;
-    --accent2-color: 	#B8D9EC;
-
+:root {
+    --primary-color: #E9E9EC;
+    --secondary-color: #4F89BA;
+    --accent1-color: #EA3A41;
+    --accent2-color: #B8D9EC;
 }
 
 body {
     font-family: "Protest Strike", sans-serif;
     font-weight: 200;
     color: black;
-    max-width: 1024px;
+    max-width: auto;
+    background-color: var(--accent2-color);
+    
 }
 
-.hero{
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    align-items: center;
+    border: 1px solid black;
+    max-width: auto;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+header nav a {
+    padding: 2px 30px;
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    padding-left: 35%;
+    
+}
+
+.hero {
     position: relative;
-    width: 100%;
+    width: auto;
+}
+
+main {
+    position: center;
 }
 
 .hero h1 {
@@ -25,7 +59,11 @@ body {
     left: 20px;
     color: var(--primary-color);
     font-size: 3rem;
-    z-index: 2;
+    text-shadow: 
+        -2px -2px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black;
 }
 
 .hero article {
@@ -35,14 +73,13 @@ body {
     background-color: var(--accent2-color);
     padding: 10px;
     color: var(--secondary-color);
-    z-index: 2;
 }
 
 .hero article img {
-    float: right;       
-    margin-left: 20px;  
-    width: 150px;       
-    height: auto;       
+    float: right;
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
 }
 
 .hero article p {
@@ -52,6 +89,64 @@ body {
 
 nav a {
     text-decoration: none;
-    
 }
 
+section {
+    margin: 1rem 0; 
+    padding-bottom: 2rem;
+}
+
+.section-images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    gap: 1%; 
+}
+section figure {
+    display: inline-block;
+    width: calc(20% - 1%); 
+    margin: 0; 
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+section img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+section figcaption {
+    margin-top: 0.5rem; 
+    font-size: 0.9rem; 
+    text-align: center; 
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: white; 
+    border: 1px solid black;
+
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer .sociallinks {
+    display: flex; 
+    gap: 10px; 
+}
+
+footer .sociallinks img {
+    width: 32px; 
+    height: 32px;
+    padding-right: 10%;
+}
+footer {
+    margin-top: auto;
+}
