@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #E9E9EC;
-    --secondary-color: #4F89BA;
+    --secondary-color: #1E384D;
     --accent1-color: #EA3A41;
     --accent2-color: #B8D9EC;
 }
@@ -102,8 +102,20 @@ nav a {
 }
 
 section {
+    
     margin: 1rem 0; 
     padding-bottom: 2rem;
+    font-size: large;
+    color: var(--secondary-color);
+    
+}
+section p {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .section-images {
@@ -111,13 +123,14 @@ section {
     flex-wrap: wrap; 
     justify-content: flex-start; 
     gap: 1%; 
+    
 }
 section figure {
     display: inline-block;
     width: calc(20% - 1%); 
     margin: 0; 
     text-align: center;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--accent1-color);
 }
 
 section img {
