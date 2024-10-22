@@ -45,12 +45,18 @@ header img {
 }
 
 .hero {
-    position: relative;
-    width: auto;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    position: relative; 
 }
 
 main {
     position:relative;
+    
 }
 
 .hero h1 {
@@ -67,12 +73,16 @@ main {
 }
 
 .hero article {
-    position: absolute;
+    position:absolute;
     bottom: 20px;
     left: 20px;
     background-color: var(--accent2-color);
     padding: 10px;
     color: var(--secondary-color);
+}
+.hero img {
+    width: 100%; 
+    height: auto;
 }
 
 .hero article img {
