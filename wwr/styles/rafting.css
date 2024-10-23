@@ -9,7 +9,7 @@
 body {
     font-family: "Protest Strike", sans-serif;
     font-weight: 200;
-    color: black;
+    color: var(--secondary-color);
     max-width:100%;
     background-color: var(--accent2-color);
     
