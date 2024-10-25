@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: black;
+    background: white;
+    
+}
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+}
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-color: red;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+fieldset{
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+legend{
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.5rem;
+}
+label{
+    font-size: 100%;
+    color: black;
+    padding: 0.1rem;
+}
+textarea{
+    font-size: 75%;
+    color:gray;
+    padding: 0.5rem;
+}
+input[type="checkbox"]{
+    width: 25px;
+    height: auto;
+    vertical-align:bottom;
+}
+button{
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: darkgreen;
+}
+footer{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px;
+    color: firebrick;
+    
+}
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+
+}
