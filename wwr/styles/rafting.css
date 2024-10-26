@@ -173,3 +173,69 @@ footer .sociallinks img {
 footer {
     margin-top: auto;
 }
+
+.company-info{
+    font-size: 2rem;
+}
+
+.company-info{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.company-info div{
+    padding: 5%;
+    width: 495px;
+}
+
+.employee-rep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-rep h3 {
+    margin-bottom: 20px; /* Adds spacing between the heading and images */
+    font-size: 4rem;
+    border-bottom: 1px solid var(--accent1-color);
+}
+
+.employee-rep .figures-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.employee-rep figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+.employee-rep figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction:inherit;
+    width: 100%;
+    height: auto;
+}
+form .submit{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.messege-box label{
+    display: flex;
+    justify-content: flex-start;
+}
