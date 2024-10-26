@@ -195,7 +195,7 @@ footer {
 }
 
 .employee-rep h3 {
-    margin-bottom: 20px; /* Adds spacing between the heading and images */
+    margin-bottom: 20px; 
     font-size: 4rem;
     border-bottom: 1px solid var(--accent1-color);
 }
@@ -224,18 +224,57 @@ footer {
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    flex-direction:inherit;
+    width: auto; /* Adjust as needed */
+    max-width: 600px; /* Limits width on larger screens */
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info label, .form-reason label, .messege-box label, .subscribe-box label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-info input, .form-reason input, .messege-box textarea {
     width: 100%;
-    height: auto;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-form .submit{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.submit {
+    text-align: center;
+    margin-top: 20px;
 }
-.messege-box label{
-    display: flex;
-    justify-content: flex-start;
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--accent1-color);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
 }
