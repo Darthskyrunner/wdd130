@@ -4,6 +4,11 @@
     --secondary-color: #1E384D;
     --accent1-color: #EA3A41;
     --accent2-color: #B8D9EC;
+    --text-shadow-border: -2px -2px 0 black, 2px -2px 0 black,-2px  2px 0 black,2px  2px 0 black  
+         
+          
+        
+        
 }
 
 body {
@@ -56,7 +61,9 @@ header img {
 
 main {
     position:relative;
-    
+    padding: 0; /* Adjust this if needed */
+    margin: 0; /* Adjust this if needed */
+    max-width: 2048px; /* Ensure it takes the full width */
 }
 
 .hero h1 {
@@ -65,11 +72,7 @@ main {
     left: 20px;
     color: var(--primary-color);
     font-size: 3rem;
-    text-shadow: 
-        -2px -2px 0 black,  
-         2px -2px 0 black,  
-        -2px  2px 0 black,  
-         2px  2px 0 black;
+    text-shadow: var(--text-shadow-border);
 }
 
 .hero article {
@@ -224,8 +227,8 @@ footer {
 }
 
 form {
-    width: auto; /* Adjust as needed */
-    max-width: 600px; /* Limits width on larger screens */
+    width: auto; 
+    max-width: 600px; 
     padding: 20px;
     margin: 0 auto;
     border: 1px solid #ccc;
@@ -234,7 +237,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form elements styling */
+
 fieldset {
     border: none;
     padding: 0;
@@ -278,4 +281,89 @@ button {
 button:hover {
     background-color: var(--secondary-color);
 }
+
+.title_image-display {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title_image-display img {
+    width: 100%;
+    height: auto;
+}
+
+.title_image-display h1,
+.title_image-display p {
+    position: absolute;
+    left: 5%;
+    width: 30%;
+    color: var(--primary-color);
+    text-shadow: var(--text-shadow-border);
+    
+}
+
+.title_image-display h1 {
+    top: 30%;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: var(--text-shadow-border);
+}
+
+.title_image-display p {
+    top: 45%;
+    font-size: 1.5rem;
+    text-shadow: var(--text-shadow-border);
+    
+}
+
+.title_image-display::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 0 15px var(--accent2-color);
+}
+
+.grid-imgs {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.figure-1 {
+    display: flex; /* Enable flex for the figure-1 container */
+    justify-content: space-between; /* Space between items */
+    
+    width: 100%; /* Full width */
+}
+
+.figure-1 img {
+    margin-left: auto; /* Push the image to the right */
+    padding: 5%;
+    width: 100%;
+    height: auto;
+}
+
+
+.figure-2 {
+    display: flex;
+    margin-top: 0; /* Space above figure-2 image */
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    max-width: 30%;
+}
+
+
+.figure-1 p {
+    margin-top: 10px; /* Space between the paragraphs */
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+
 
