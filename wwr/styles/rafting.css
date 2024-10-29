@@ -15,11 +15,15 @@ body {
     font-family: "Protest Strike", sans-serif;
     font-weight: 200;
     color: var(--secondary-color);
-    max-width:100%;
+    max-width: 2064px;
     background-color: var(--accent2-color);
+    
     
 }
 
+* {
+    box-sizing: border-box;
+}
 header {
     margin: 1rem auto;
     display: grid;
@@ -60,10 +64,11 @@ header img {
 }
 
 main {
-    position:relative;
-    padding: 0; /* Adjust this if needed */
+    position: relative;
+    padding: 10px; /* Adjust this if needed */
     margin: 0; /* Adjust this if needed */
     max-width: 2048px; /* Ensure it takes the full width */
+    
 }
 
 .hero h1 {
@@ -330,40 +335,116 @@ button:hover {
 
 .grid-imgs {
     display: flex;
-    flex-direction: column; /* Arrange children vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 .figure-1 {
-    display: flex; /* Enable flex for the figure-1 container */
-    justify-content: space-between; /* Space between items */
+    display: flex; 
+    justify-content: space-between; 
     
-    width: 100%; /* Full width */
+    width: 100%; 
 }
 
 .figure-1 img {
-    margin-left: auto; /* Push the image to the right */
+    margin-left: auto; 
     padding: 5%;
     width: 100%;
     height: auto;
 }
 
-
 .figure-2 {
     display: flex;
-    margin-top: 0; /* Space above figure-2 image */
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    max-width: 30%;
+    justify-content: space-between;
+    width: 98%;
+    max-width: 2064px;
+    
 }
 
+.figure-2 img {
+    display: flex;
+    margin-top: 30px; 
+    width: 100%;
+    height: auto;
+    max-width: 40%;
+    
+}
+.figure-2 p {
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding:5%;
+    
+}
 
 .figure-1 p {
-    margin-top: 10px; /* Space between the paragraphs */
+    margin-top: 30px; 
     padding: 5%;
     font-size: 1.5rem;
 }
 
+.trips_link_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    
+    border-radius: 8px;
+    width: 50%;   
+    margin: auto;
+    margin-top: 2rem;
+}
 
+.trips_link_box p {
+    margin-bottom: 20px;
+}
 
+.trips_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    height: auto;
+}
+
+.trips_button:hover {
+    background-color: var(--secondary-color);
+}
+.newsletter_sign_up {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    
+}
+.newsletter_sign_up button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    
+}
+.newsletter_sign_up button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    height: auto;
+}
+.newsletter_sign_up button:hover{
+    background-color: var(--secondary-color);
+}
