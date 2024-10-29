@@ -276,7 +276,7 @@ legend {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: var(--accent1-color);
+    background-color:var(--secondary-color);
     color: white;
     font-size: 1em;
     cursor: pointer;
@@ -284,7 +284,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
 .title_image-display {
@@ -406,7 +406,7 @@ button:hover {
 .trips_button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -416,7 +416,7 @@ button:hover {
 }
 
 .trips_button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 .newsletter_sign_up {
     display: flex;
@@ -437,7 +437,7 @@ button:hover {
 .newsletter_sign_up button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -446,5 +446,5 @@ button:hover {
     height: auto;
 }
 .newsletter_sign_up button:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
